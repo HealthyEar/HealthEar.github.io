@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <title> Random Image </title>
+
+    <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <meta name="viewport" content="width=device-width", initial-scale="1">
+    
+
+
+
+
+
+
+  </head>
+  <body style="background-color:black;" data-role="content" align="center" >
+    <div style="background-color:black;">
+
+        <script type="text/javascript"  >
+            //Javascript Created by Computerhope https://www.computerhope.com/
+            //store the quotations in arrays
+            var images = [],
+            index = 0;
+            images[0] = "<a href = 'https://sites.google.com/grad.ntue.edu.tw/hearing-health/聲林歷險記桌遊/事件卡-飲食均衡類/音樂超過60?authuser=0'><img src='images/1.jpg' alt='Visit Computer Hope' width='100%' ></a>";
+            images[1] = "<a href = 'https://sites.google.com/grad.ntue.edu.tw/hearing-health/聲林歷險記桌遊/事件卡-飲食均衡類/講話太大聲?authuser=0'><img src='images/2.jpg' alt='Computer History'width='100%'></a>";
+            images[2] = "<a href = 'https://sites.google.com/grad.ntue.edu.tw/hearing-health/聲林歷險記桌遊/事件卡-飲食均衡類/噪音環境?authuser=0'><img src='images/3.jpg' alt='Visit Computer Hope'width='100%'></a>";
+           
+
+
+            index = Math.floor(Math.random() * images.length);
+            document.write(images[index]);
+            //done
+            </script>
+
+    </div>
+    
+  </body>
+</html>
