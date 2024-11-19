@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <title> Random Image </title>
+
+    <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <meta name="viewport" content="width=device-width", initial-scale="1">
+    
+
+
+
+
+
+
+  </head>
+  <body style="background-color:black;" data-role="content" align="center" >
+    <div style="background-color:black;">
+
+        <script type="text/javascript"  >
+            //Javascript Created by Computerhope https://www.computerhope.com/
+            //store the quotations in arrays
+            var images= [],
+            index = 0;
+           
+            images[0] = "<a href = 'https://sites.google.com/grad.ntue.edu.tw/hearing-health/%E8%81%BD%E5%8A%9B%E4%BF%9D%E5%81%A5%E7%9F%A5%E8%AD%98/%E8%81%BD%E8%A6%BA%E7%9A%84%E7%94%A2%E7%94%9F?authuser=0'><img src='images/1.jpg' alt='Visit Computer Hope' width='100%' ></a>";
+            images[1] = "<a href = 'https://sites.google.com/grad.ntue.edu.tw/hearing-health/%E8%81%BD%E5%8A%9B%E4%BF%9D%E5%81%A5%E7%9F%A5%E8%AD%98/%E8%81%BD%E8%A6%BA%E7%9A%84%E7%94%A2%E7%94%9F?authuser=0'><img src='images/1.jpg' alt='Visit Computer Hope' width='100%' ></a>";
+            images[2] = "<a href = 'https://sites.google.com/grad.ntue.edu.tw/hearing-health/%E8%81%BD%E5%8A%9B%E4%BF%9D%E5%81%A5%E7%9F%A5%E8%AD%98/%E8%81%BD%E8%A6%BA%E7%9A%84%E7%94%A2%E7%94%9F?authuser=0'><img src='images/1.jpg' alt='Visit Computer Hope' width='100%' ></a>";
+            images[3] = "<a href = 'https://sites.google.com/grad.ntue.edu.tw/hearing-health/%E8%81%BD%E5%8A%9B%E4%BF%9D%E5%81%A5%E7%9F%A5%E8%AD%98/%E8%81%BD%E8%A6%BA%E7%9A%84%E7%94%A2%E7%94%9F?authuser=0'><img src='images/1.jpg' alt='Visit Computer Hope' width='100%' ></a>";
+            images[4] = "<a href = 'https://sites.google.com/grad.ntue.edu.tw/hearing-health/%E8%81%BD%E5%8A%9B%E4%BF%9D%E5%81%A5%E7%9F%A5%E8%AD%98/%E8%81%BD%E8%A6%BA%E7%9A%84%E7%94%A2%E7%94%9F?authuser=0'><img src='images/1.jpg' alt='Visit Computer Hope' width='100%' ></a>";
+            images[5] = "<a href = 'https://sites.google.com/grad.ntue.edu.tw/hearing-health/%E8%81%BD%E5%8A%9B%E4%BF%9D%E5%81%A5%E7%9F%A5%E8%AD%98/%E8%81%BD%E8%A6%BA%E7%9A%84%E7%94%A2%E7%94%9F?authuser=0'><img src='images/1.jpg' alt='Visit Computer Hope' width='100%' ></a>";
+            images[6] = "<a href = 'https://sites.google.com/grad.ntue.edu.tw/hearing-health/%E8%81%BD%E5%8A%9B%E4%BF%9D%E5%81%A5%E7%9F%A5%E8%AD%98/%E8%81%BD%E8%A6%BA%E7%9A%84%E7%94%A2%E7%94%9F?authuser=0'><img src='images/1.jpg' alt='Visit Computer Hope' width='100%' ></a>";
+            images[7] = "<a href = 'https://sites.google.com/grad.ntue.edu.tw/hearing-health/%E8%81%BD%E5%8A%9B%E4%BF%9D%E5%81%A5%E7%9F%A5%E8%AD%98/%E8%81%BD%E8%A6%BA%E7%9A%84%E7%94%A2%E7%94%9F?authuser=0'><img src='images/1.jpg' alt='Visit Computer Hope' width='100%' ></a>";
+            images[8] = "<a href = 'https://sites.google.com/grad.ntue.edu.tw/hearing-health/%E8%81%BD%E5%8A%9B%E4%BF%9D%E5%81%A5%E7%9F%A5%E8%AD%98/%E8%81%BD%E8%A6%BA%E7%9A%84%E7%94%A2%E7%94%9F?authuser=0'><img src='images/1.jpg' alt='Visit Computer Hope' width='100%' ></a>";
+            images[9] = "<a href = 'https://sites.google.com/grad.ntue.edu.tw/hearing-health/%E8%81%BD%E5%8A%9B%E4%BF%9D%E5%81%A5%E7%9F%A5%E8%AD%98/%E8%81%BD%E8%A6%BA%E7%9A%84%E7%94%A2%E7%94%9F?authuser=0'><img src='images/1.jpg' alt='Visit Computer Hope' width='100%' ></a>";
+            images[10] = "<a href = 'https://sites.google.com/grad.ntue.edu.tw/hearing-health/%E8%81%BD%E5%8A%9B%E4%BF%9D%E5%81%A5%E7%9F%A5%E8%AD%98/%E8%81%BD%E8%A6%BA%E7%9A%84%E7%94%A2%E7%94%9F?authuser=0'><img src='images/2.jpg' alt='Computer History'width='100%'></a>";
+            images[11] = "<a href = 'https://sites.google.com/grad.ntue.edu.tw/hearing-health/%E8%81%BD%E5%8A%9B%E4%BF%9D%E5%81%A5%E7%9F%A5%E8%AD%98/%E8%81%BD%E8%A6%BA%E7%9A%84%E7%94%A2%E7%94%9F?authuser=0'><img src='images/2.jpg' alt='Computer History'width='100%'></a>";
+            images[12] = "<a href = 'https://sites.google.com/grad.ntue.edu.tw/hearing-health/%E8%81%BD%E5%8A%9B%E4%BF%9D%E5%81%A5%E7%9F%A5%E8%AD%98/%E8%81%BD%E8%A6%BA%E7%9A%84%E7%94%A2%E7%94%9F?authuser=0'><img src='images/3.jpg' alt='Visit Computer Hope'width='100%'></a>";
+            images[13] = "<a href = 'https://sites.google.com/grad.ntue.edu.tw/hearing-health/%E8%81%BD%E5%8A%9B%E4%BF%9D%E5%81%A5%E7%9F%A5%E8%AD%98/%E8%81%BD%E8%A6%BA%E7%9A%84%E7%94%A2%E7%94%9F?authuser=0'><img src='images/3.jpg' alt='Visit Computer Hope'width='100%'></a>";
+            images[14] = "<a href = 'https://sites.google.com/grad.ntue.edu.tw/hearing-health/%E8%81%BD%E5%8A%9B%E4%BF%9D%E5%81%A5%E7%9F%A5%E8%AD%98/%E8%81%BD%E8%A6%BA%E7%9A%84%E7%94%A2%E7%94%9F?authuser=0'><img src='images/4.jpg' alt='Visit Computer Hope'width='100%'></a>";
+            images[15] = "<a href = 'https://sites.google.com/grad.ntue.edu.tw/hearing-health/%E8%81%BD%E5%8A%9B%E4%BF%9D%E5%81%A5%E7%9F%A5%E8%AD%98/%E8%81%BD%E8%A6%BA%E7%9A%84%E7%94%A2%E7%94%9F?authuser=0'><img src='images/4.jpg' alt='Visit Computer Hope'width='100%'></a>";
+            images[16] = "<a href = 'https://sites.google.com/grad.ntue.edu.tw/hearing-health/%E8%81%BD%E5%8A%9B%E4%BF%9D%E5%81%A5%E7%9F%A5%E8%AD%98/%E7%B0%A1%E5%96%AE%E7%9A%84%E8%81%BD%E5%8A%9B%E6%AA%A2%E6%B8%AC?authuser=0'><img src='images/5.jpg' alt='Visit Computer Hope'width='100%'></a>";
+            images[17] = "<a href = 'https://sites.google.com/grad.ntue.edu.tw/hearing-health/%E8%81%BD%E5%8A%9B%E4%BF%9D%E5%81%A5%E7%9F%A5%E8%AD%98/%E4%BF%9D%E9%A4%8A%E8%81%BD%E5%8A%9B%E7%9A%84%E6%96%B9%E6%B3%95?authuser=0'><img src='images/6.jpg' alt='Visit Computer Hope'width='100%'></a>";
+            images[18] = "<a href = 'https://sites.google.com/grad.ntue.edu.tw/hearing-health/%E8%81%BD%E5%8A%9B%E4%BF%9D%E5%81%A5%E7%9F%A5%E8%AD%98/%E8%81%BD%E8%A6%BA%E7%9A%84%E7%94%A2%E7%94%9F?authuser=0'><img src='images/7.jpg' alt='Visit Computer Hope'width='100%'></a>";
+            images[19] = "<a href = 'https://sites.google.com/grad.ntue.edu.tw/hearing-health/%E8%81%BD%E5%8A%9B%E4%BF%9D%E5%81%A5%E7%9F%A5%E8%AD%98/%E8%81%BD%E8%A6%BA%E7%9A%84%E7%94%A2%E7%94%9F?authuser=0'><img src='images/8.jpg' alt='Visit Computer Hope'width='100%'></a>";
+            images[20] = "<a href = 'https://sites.google.com/grad.ntue.edu.tw/hearing-health/%E8%81%BD%E5%8A%9B%E4%BF%9D%E5%81%A5%E7%9F%A5%E8%AD%98/%E8%81%BD%E8%A6%BA%E7%9A%84%E7%94%A2%E7%94%9F?authuser=0'><img src='images/9.jpg' alt='Visit Computer Hope'width='100%'></a>";
+            images[21] = "<a href = 'https://sites.google.com/grad.ntue.edu.tw/hearing-health/%E8%81%BD%E5%8A%9B%E4%BF%9D%E5%81%A5%E7%9F%A5%E8%AD%98/%E8%81%BD%E5%8A%9B%E6%90%8D%E5%82%B7?authuser=0'><img src='images/10.jpg' alt='Visit Computer Hope'width='100%'></a>";
+            images[22] = "<a href = 'https://sites.google.com/grad.ntue.edu.tw/hearing-health/%E8%81%BD%E5%8A%9B%E4%BF%9D%E5%81%A5%E7%9F%A5%E8%AD%98/%E8%81%BD%E5%8A%9B%E6%90%8D%E5%82%B7?authuser=0'><img src='images/10.jpg' alt='Visit Computer Hope'width='100%'></a>";
+            images[23] = "<a href = 'https://sites.google.com/grad.ntue.edu.tw/hearing-health/%E8%81%BD%E5%8A%9B%E4%BF%9D%E5%81%A5%E7%9F%A5%E8%AD%98/%E8%81%BD%E5%8A%9B%E6%90%8D%E5%82%B7?authuser=0'><img src='images/10.jpg' alt='Visit Computer Hope'width='100%'></a>";
+            images[24] = "<a href = 'https://sites.google.com/grad.ntue.edu.tw/hearing-health/%E8%81%BD%E5%8A%9B%E4%BF%9D%E5%81%A5%E7%9F%A5%E8%AD%98/%E8%81%BD%E5%8A%9B%E6%90%8D%E5%82%B7?authuser=0'><img src='images/10.jpg' alt='Visit Computer Hope'width='100%'></a>";
+            images[25] = "<a href = 'https://sites.google.com/grad.ntue.edu.tw/hearing-health/%E8%81%BD%E5%8A%9B%E4%BF%9D%E5%81%A5%E7%9F%A5%E8%AD%98/%E5%99%AA%E9%9F%B3%E5%B0%8D%E8%BA%AB%E9%AB%94%E7%9A%84%E5%BD%B1%E9%9F%BF?authuser=0'><img src='images/11.jpg' alt='Visit Computer Hope'width='100%'></a>";
+            images[26] = "<a href = 'https://sites.google.com/grad.ntue.edu.tw/hearing-health/%E8%81%BD%E5%8A%9B%E4%BF%9D%E5%81%A5%E7%9F%A5%E8%AD%98/%E5%99%AA%E9%9F%B3%E5%B0%8D%E8%BA%AB%E9%AB%94%E7%9A%84%E5%BD%B1%E9%9F%BF?authuser=0'><img src='images/12.jpg' alt='Visit Computer Hope'width='100%'></a>";
+            images[27] = "<a href = 'https://sites.google.com/grad.ntue.edu.tw/hearing-health/%E8%81%BD%E5%8A%9B%E4%BF%9D%E5%81%A5%E7%9F%A5%E8%AD%98/%E5%99%AA%E9%9F%B3%E5%B0%8D%E8%BA%AB%E9%AB%94%E7%9A%84%E5%BD%B1%E9%9F%BF?authuser=0'><img src='images/13.jpg' alt='Visit Computer Hope'width='100%'></a>";
+            images[28] = "<a href = 'https://sites.google.com/grad.ntue.edu.tw/hearing-health/%E8%81%BD%E5%8A%9B%E4%BF%9D%E5%81%A5%E7%9F%A5%E8%AD%98/%E5%99%AA%E9%9F%B3%E5%B0%8D%E8%BA%AB%E9%AB%94%E7%9A%84%E5%BD%B1%E9%9F%BF?authuser=0'><img src='images/14.jpg' alt='Visit Computer Hope'width='100%'></a>";
+            images[29] = "<a href = 'https://sites.google.com/grad.ntue.edu.tw/hearing-health/%E8%81%BD%E5%8A%9B%E4%BF%9D%E5%81%A5%E7%9F%A5%E8%AD%98/%E5%99%AA%E9%9F%B3%E5%B0%8D%E8%BA%AB%E9%AB%94%E7%9A%84%E5%BD%B1%E9%9F%BF?authuser=0'><img src='images/15.jpg' alt='Visit Computer Hope'width='100%'></a>";
+            images[30] = "<a href = 'https://sites.google.com/grad.ntue.edu.tw/hearing-health/%E8%81%BD%E5%8A%9B%E4%BF%9D%E5%81%A5%E7%9F%A5%E8%AD%98/%E5%99%AA%E9%9F%B3%E5%B0%8D%E8%BA%AB%E9%AB%94%E7%9A%84%E5%BD%B1%E9%9F%BF?authuser=0'><img src='images/16.jpg' alt='Visit Computer Hope'width='100%'></a>";
+            images[31] = "<a href = 'https://sites.google.com/grad.ntue.edu.tw/hearing-health/%E8%81%BD%E5%8A%9B%E4%BF%9D%E5%81%A5%E7%9F%A5%E8%AD%98/%E8%81%BD%E5%8A%9B%E7%9A%84%E6%AA%A2%E6%B8%AC?authuser=0'><img src='images/17.jpg' alt='Visit Computer Hope'width='100%'></a>";
+            images[32] = "<a href = 'https://sites.google.com/grad.ntue.edu.tw/hearing-health/%E8%81%BD%E5%8A%9B%E4%BF%9D%E5%81%A5%E7%9F%A5%E8%AD%98/%E8%81%BD%E5%8A%9B%E8%BC%94%E5%85%B7?authuser=0'><img src='images/18.jpg' alt='Visit Computer Hope'width='100%'></a>";
+            images[33] = "<a href = 'https://sites.google.com/grad.ntue.edu.tw/hearing-health/%E8%81%BD%E5%8A%9B%E4%BF%9D%E5%81%A5%E7%9F%A5%E8%AD%98/%E8%81%BD%E5%8A%9B%E8%BC%94%E5%85%B7%E7%9A%84%E9%81%B8%E8%B3%BC?authuser=0'><img src='images/19.jpg' alt='Visit Computer Hope'width='100%'></a>";
+            images[34] = "<a href = 'https://sites.google.com/grad.ntue.edu.tw/hearing-health/%E8%81%BD%E5%8A%9B%E4%BF%9D%E5%81%A5%E7%9F%A5%E8%AD%98/%E5%99%AA%E9%9F%B3%E5%B0%8D%E8%BA%AB%E9%AB%94%E7%9A%84%E5%BD%B1%E9%9F%BF?authuser=0'><img src='images/20.jpg' alt='Visit Computer Hope'width='100%'></a>";
+            images[35] = "<a href = 'https://sites.google.com/grad.ntue.edu.tw/hearing-health/%E8%81%BD%E5%8A%9B%E4%BF%9D%E5%81%A5%E7%9F%A5%E8%AD%98/%E8%81%BD%E5%8A%9B%E7%9A%84%E8%A8%BA%E6%96%B7%E8%88%87%E6%B2%BB%E7%99%82?authuser=0'><img src='images/21.jpg' alt='Visit Computer Hope'width='100%'></a>";
+            images[36] = "<a href = 'https://sites.google.com/grad.ntue.edu.tw/hearing-health/%E8%81%BD%E5%8A%9B%E4%BF%9D%E5%81%A5%E7%9F%A5%E8%AD%98/%E8%80%B3%E9%81%93%E4%B8%8D%E9%81%A9%E7%97%87%E7%8B%80%E8%99%95%E7%90%86?authuser=0'><img src='images/22.jpg' alt='Visit Computer Hope'width='100%'></a>";
+            images[37] = "<a href = 'https://sites.google.com/grad.ntue.edu.tw/hearing-health/%E8%81%BD%E5%8A%9B%E4%BF%9D%E5%81%A5%E7%9F%A5%E8%AD%98/%E8%81%BD%E5%8A%9B%E7%9A%84%E6%AA%A2%E6%B8%AC?authuser=0'><img src='images/23.jpg' alt='Visit Computer Hope'width='100%'></a>";
+            images[38] = "<a href = 'https://sites.google.com/grad.ntue.edu.tw/hearing-health/%E8%81%BD%E5%8A%9B%E4%BF%9D%E5%81%A5%E7%9F%A5%E8%AD%98/%E5%99%AA%E9%9F%B3%E5%B0%8D%E8%BA%AB%E9%AB%94%E7%9A%84%E5%BD%B1%E9%9F%BF?authuser=0'><img src='images/24.jpg' alt='Visit Computer Hope'width='100%'></a>";
+            images[39] = "<a href = 'https://sites.google.com/grad.ntue.edu.tw/hearing-health/%E8%81%BD%E5%8A%9B%E4%BF%9D%E5%81%A5%E7%9F%A5%E8%AD%98/%E4%BF%9D%E9%A4%8A%E8%81%BD%E5%8A%9B%E7%9A%84%E6%96%B9%E6%B3%95?authuser=0'><img src='images/25.jpg' alt='Visit Computer Hope'width='100%'></a>";
+            images[40] = "<a href = 'https://sites.google.com/grad.ntue.edu.tw/hearing-health/%E8%81%BD%E5%8A%9B%E4%BF%9D%E5%81%A5%E7%9F%A5%E8%AD%98/%E9%9F%B3%E9%87%8F%E7%9A%84%E5%A4%A7%E5%B0%8F?authuser=0'><img src='images/26.jpg' alt='Visit Computer Hope'width='100%'></a>";
+            images[41] = "<a href = 'https://sites.google.com/grad.ntue.edu.tw/hearing-health/%E8%81%BD%E5%8A%9B%E4%BF%9D%E5%81%A5%E7%9F%A5%E8%AD%98/%E8%80%B3%E9%81%93%E7%95%B0%E7%89%A9%E8%99%95%E7%90%86?authuser=0'><img src='images/27.jpg' alt='Visit Computer Hope'width='100%'></a>";
+            images[42] = "<a href = 'https://sites.google.com/grad.ntue.edu.tw/hearing-health/%E8%81%BD%E5%8A%9B%E4%BF%9D%E5%81%A5%E7%9F%A5%E8%AD%98/%E5%99%AA%E9%9F%B3%E5%B0%8D%E8%BA%AB%E9%AB%94%E7%9A%84%E5%BD%B1%E9%9F%BF?authuser=0'><img src='images/28.jpg' alt='Visit Computer Hope'width='100%'></a>";
+            images[43] = "<a href = 'https://sites.google.com/grad.ntue.edu.tw/hearing-health/%E8%81%BD%E5%8A%9B%E4%BF%9D%E5%81%A5%E7%9F%A5%E8%AD%98/%E4%BF%9D%E9%A4%8A%E8%81%BD%E5%8A%9B%E7%9A%84%E6%96%B9%E6%B3%95?authuser=0'><img src='images/29.jpg' alt='Visit Computer Hope'width='100%'></a>";
+            images[44] = "<a href = 'https://sites.google.com/grad.ntue.edu.tw/hearing-health/%E8%81%BD%E5%8A%9B%E4%BF%9D%E5%81%A5%E7%9F%A5%E8%AD%98/%E8%81%BD%E6%90%8D%E5%B0%8D%E8%BA%AB%E9%AB%94%E7%94%9F%E6%B4%BB%E7%9A%84%E5%BD%B1%E9%9F%BF?authuser=0'><img src='images/30.jpg' alt='Visit Computer Hope'width='100%'></a>";
+            images[45] = "<a href = 'https://sites.google.com/grad.ntue.edu.tw/hearing-health/%E8%81%BD%E5%8A%9B%E4%BF%9D%E5%81%A5%E7%9F%A5%E8%AD%98/%E8%81%BD%E6%90%8D%E5%B0%8D%E8%BA%AB%E9%AB%94%E7%94%9F%E6%B4%BB%E7%9A%84%E5%BD%B1%E9%9F%BF?authuser=0'><img src='images/31.jpg' alt='Visit Computer Hope'width='100%'></a>";
+            images[46] = "<a href = 'https://sites.google.com/grad.ntue.edu.tw/hearing-health/%E8%81%BD%E5%8A%9B%E4%BF%9D%E5%81%A5%E7%9F%A5%E8%AD%98/%E8%81%BD%E6%90%8D%E5%B0%8D%E8%BA%AB%E9%AB%94%E7%94%9F%E6%B4%BB%E7%9A%84%E5%BD%B1%E9%9F%BF?authuser=0'><img src='images/32.jpg' alt='Visit Computer Hope'width='100%'></a>";
+            images[47] = "<a href = 'https://sites.google.com/grad.ntue.edu.tw/hearing-health/%E8%81%BD%E5%8A%9B%E4%BF%9D%E5%81%A5%E7%9F%A5%E8%AD%98/%E9%85%8D%E6%88%B4%E8%81%BD%E5%8A%9B%E8%BC%94%E5%85%B7%E7%9A%84%E7%9B%8A%E8%99%95%E8%88%87%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A0%85?authuser=0'><img src='images/33.jpg' alt='Visit Computer Hope'width='100%'></a>";
+            images[48] = "<a href = ''><img src='images/34.jpg' alt='Visit Computer Hope'width='100%'></a>";
+            images[49] = "<a href = ''><img src='images/34.jpg' alt='Visit Computer Hope'width='100%'></a>";
+            images[50] = "<a href = ''><img src='images/34.jpg' alt='Visit Computer Hope'width='100%'></a>";
+            images[51] = "<a href = ''><img src='images/34.jpg' alt='Visit Computer Hope'width='100%'></a>";
+           
+
+            index = Math.floor(Math.random() * images.length);
+            document.write(images[index]);
+            //done
+            </script>
+
+    </div>
+    
+  </body>
+</htm
